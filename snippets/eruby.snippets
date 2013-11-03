@@ -269,15 +269,15 @@ snippet body
 snippet br
 	<br />${1}
 snippet button
-	<button type="${1:submit}">${2}</button>${3}
+	<button type="${1:btn btn-default}">${2}</button>
 snippet button.
-	<button class="${1:button}" type="${2:submit}">${3}</button>${4}
+	<button class="${1:btn btn-default}" type="${2:submit}">${3}</button>
 snippet button#
-	<button id="${1}" type="${2:submit}">${3}</button>${4}
+	<button id="${1}" class="${2:btn btn-default}" type="${3:submit}">${4}</button>
 snippet button:s
-	<button type="submit">${1}</button>${2}
+	<button class="${1:btn btn-default}" type="submit">${2}</button>
 snippet button:r
-	<button type="reset">${1}</button>${2}
+	<button class="${1:btn btn-default}" type="reset">${2}</button>
 snippet canvas
 	<canvas>
 		${1}
@@ -673,13 +673,17 @@ snippet img.
 snippet img#
 	<img id="${1}" src="${2}" alt="${3}" />${4}
 snippet i5
-	<input type="${1:text/submit/hidden/button/image}" placeholder="${2}" require autofocus>
+	<input type="${1:text/submit/hidden/button/image/email}" placeholder="${2}" require autofocus>
+snippet i5.
+	<input type="${1:text/submit/hidden/button/image/email}" placeholder="${2}" class="${3}" require autofocus>
+snippet i5#
+	<input type="${1:text/submit/hidden/button/image/email}" placeholder="${2}" id="${3}" require autofocus>
 snippet i5:lab
 	<label for="${1:Name}">${2}</label>
-	<input type="${3:text/submit/hidden/button/image}" class="${4:form-control}" id="$1" placeholder="${5}" ${6:require autofocus}>
+	<input type="${3:text/submit/hidden/button/image/email}" class="${4:form-control}" id="$1" placeholder="${5}" ${6:require autofocus}>
 snippet i5:lab.
 	<label class="${1}" for="${2:Name}">${3}</label>
-	<input type="${4:text/submit/hidden/button/image}" class="${5:form-control}" id="$2" placeholder="${6}" ${7:require autofocus}>
+	<input type="${4:text/submit/hidden/button/image/email}" class="${5:form-control}" id="$2" placeholder="${6}" ${7:require autofocus}>
 snippet i5:passwd
 	<label for="${1:Name}">${2}</label>
 	<input type="password" class="${3:form-contorl}" id="$1" placeholder="${3:Password}" ${4:required}>
@@ -689,11 +693,11 @@ snippet i5:passwd.
 snippet i5:checkbox
 	<label><input type="checkbox" value="${1}">${2:Remember me}</label>
 snippet i5:button
-	<button class="${1}" type="${2}">${3}</button>
+	<button class="${1:btn}" type="${2}">${3}</button>
 snippet input
-	<input type="${1:text/submit/hidden/button/image}" name="${2}" id="${3:$2}" value="${4}" />
+	<input type="${1:text/submit/hidden/button/image/email}" name="${2}" id="${3:$2}" value="${4}" />
 snippet input.
-	<input class="${1}" type="${2:text/submit/hidden/button/image}" name="${3}" id="${4:$3}" value="${5}" />
+	<input class="${1}" type="${2:text/submit/hidden/button/image/email}" name="${3}" id="${4:$3}" value="${5}" />
 snippet input:text
 	<input type="text" name="${1}" id="${2:$1}" value="${3}" />${4}
 snippet input:submit
