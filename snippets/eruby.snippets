@@ -3,6 +3,9 @@
 # Includes html.snippets
 
 # Rails *****************************
+snippet sff
+	<%= simple_form_for(${1:resource}, :as => ${2:resource_name}, :url => session_path($2), :html => { :class => '${3:form-horizontal}'}) do |${4:f}| %>
+	<% end %>
 snippet rt.
 	t('${1:layouts}.${2:application/placehold/form}.${3:email/password/btn_signin}')
 snippet ri
@@ -10,9 +13,9 @@ snippet ri
 snippet rip
 	<%= f.input ${1::email/:password/:remember_me}, ${2::label => false}, :placeholder => ${3:t(layouts.application.email) } %>
 snippet rl
-	<%= f.label ${1:t(layouts.form.email)}, ${2::class => 'control-label'} %>
+	<%= f.label ${1:t('layouts.form.email'), ${2::class => 'control-label'} %>
 snippet rlc
-	<%= f.label t(${1:layouts}.${2:form}.${3:email})}, :class => ${4:'control-label'} %>
+	<%= f.label t('${1:layouts}.${2:form}.${3:email}')}, :class => ${4:'control-label'} %>
 snippet rc
 	<% ${1} -%>
 snippet rce
