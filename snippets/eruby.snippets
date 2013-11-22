@@ -130,6 +130,10 @@ snippet slt
 	<%= stylesheet_link_tag ${1::all}, :cache => ${2:true} %>
 snippet sslt
 	<%= stylesheet_link_tag "${1}" %>
+
+# HTML *****************************
+snippet com
+	<!-- ${1} -->
 # Generic Doctype
 snippet doctype HTML 4.01 Strict
 	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
@@ -986,6 +990,8 @@ snippet source
 	<source src="${1}" type="${2}" media="${3}" />
 snippet span
 	<span>${1}</span>
+snippet span.
+	<span class="${1}">${2}</span>
 snippet strong
 	<strong>${1}</strong>
 snippet style
