@@ -1,3 +1,11 @@
+# document function
+snippet dfun
+	$(document).ready(function(){
+	})
+# Submit
+snippet sub
+	$("${1:class_id}").submit(
+	)
 # Prototype
 snippet proto
 	${1:class_name}.prototype.${2:method_name} =
@@ -140,7 +148,7 @@ snippet sing
 		$1 = function $1($2) {
 			return instance;
 		};
-		
+
 		// carry over the prototype properties
 		$1.prototype = this;
 
