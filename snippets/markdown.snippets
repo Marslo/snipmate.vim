@@ -137,3 +137,19 @@ snippet pullquote
 	{% pullquote %}
 	${1:text} {" ${2:quote} "} ${0:text}
 	{% endpullquote %}
+
+snippet tag
+	<${1:tag}>${2}</$1>
+
+snippet det
+	<details><summary>${0:Click to check details}</summary></details>
+
+snippet coded
+	<details><summary>${0:Click to check details}</summary>
+	<pre><code>${1:Code here}
+	</code></pre>
+	</details>
+
+snippet codeb "Code block"
+	<pre><code>${0:code here}
+	</code></pre>
